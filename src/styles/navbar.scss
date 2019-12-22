@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
+  font-size: 0.8rem;
 }
 
 .navbar__element--logo {
@@ -40,5 +41,30 @@
     cursor: pointer;
     color: #3ed8b5;
     background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.navbar__button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  background-color: green;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+}
+
+.navbar__button--signout {
+  background-color: red;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.5);
   }
 }
