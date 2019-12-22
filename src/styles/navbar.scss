@@ -1,0 +1,44 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar__element--logo {
+  position: relative;
+  background-color: #333;
+
+  &:before {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to bottom, #709ad1 0%, #3ed8b5 100%);
+  }
+}
+
+.navbar__icon {
+  padding-right: 10px;
+}
+
+.navbar__link {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    color: #3ed8b5;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
