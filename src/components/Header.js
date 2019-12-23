@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GoogleAuth from './GoogleAuth';
 
 import '../styles/navbar.scss';
 
@@ -26,6 +27,9 @@ const Header = () => {
           <Link to="/res" className="navbar__link">
             <i className="fas fa-ticket-alt navbar__icon"></i>Reservation
           </Link>
+        </li>
+        <li className="navbar__element">
+          <GoogleAuth />
         </li>
       </ul>
     </nav>
