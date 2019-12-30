@@ -1,4 +1,8 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -6,7 +10,12 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+}
+
+.navbar__element,
+.navbar__list {
+  height: 100%;
 }
 
 .navbar__element--logo {
@@ -31,7 +40,9 @@
 
 .navbar__link {
   display: block;
-  padding: 20px;
+  height: 100%;
+  line-height: 50px;
+  padding: 0 20px;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -44,27 +55,9 @@
   }
 }
 
-.navbar__button {
-  border: none;
-  background-color: transparent;
-  color: white;
-  padding: 10px;
-  background-color: green;
-  margin: 10px 0;
-  border-radius: 5px;
-  transition: all 0.2s;
-
+.navbar__link--logo {
   &:hover {
-    cursor: pointer;
-    background-color: rgba(0, 255, 0, 0.5);
-  }
-}
-
-.navbar__button--signout {
-  background-color: red;
-
-  &:hover {
-    cursor: pointer;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: #333;
+    color: #fff;
   }
 }

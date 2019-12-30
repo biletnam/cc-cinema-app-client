@@ -1,12 +1,7 @@
-export const signIn = userId => {
-  return {
-    type: 'SIGN_IN',
-    payload: userId
-  };
-};
+import axios from 'axios';
+import { FETCH_USER } from './types';
 
-export const signOut = () => {
-  return {
-    type: 'SIGN_OUT'
-  };
+export const fetchUser = () => async dispatch => {
+  const res = await axios.get('/api/users/me');
+  dispatch({ type: FETCH_USER, payload: res.data });
 };
