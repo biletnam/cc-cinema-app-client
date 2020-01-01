@@ -1,0 +1,43 @@
+.movie-card {
+  color: white;
+  background-color: #333;
+
+  .movie-card__title {
+    padding: 20px;
+  }
+
+  .movie-card__content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'poster overview' 'poster details';
+    grid-gap: 10px;
+    font-size: 0.6rem;
+
+    .movie-card__image {
+      grid-area: poster;
+      padding-bottom: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .movie-card__overview {
+      grid-area: overview;
+    }
+
+    .movie-card__details {
+      grid-area: details;
+
+      .movie-card__details-list {
+        list-style: none;
+      }
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

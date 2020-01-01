@@ -1,0 +1,12 @@
+.carousel-container {
+  width: 80%;
+  margin: 30px auto;
+
+  .carousel {
+    border-radius: 20px;
+
+    .slide {
+      background-color: #333;
+    }
+  }
+}
